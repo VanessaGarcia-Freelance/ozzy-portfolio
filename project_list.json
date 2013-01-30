@@ -1,0 +1,65 @@
+{
+    "projects": [
+        {
+            "name": "Project 1  ",
+            "descrip": "This is the descrip",
+            "images": ["image1", "image2","image3"]
+
+        },
+        {
+            "name": "Project 2",
+            "descrip": "This is the descrip",
+            "images": ["image1", "image2","image3"]
+
+        },
+        {
+            "name": "Project 3",
+            "descrip": "This is the descrip",
+            "thumbnail":"images/projectthumb.jpg",
+            "images": ["image1", "image2","image3"]
+
+        },
+        {
+            "name": "Project 4",
+            "descrip": "This is the descrip",
+            "thumbnail":"images/projectthumb.jpg",
+            "images": ["image1", "image2","image3"]
+
+        },
+        {
+            "name": "Project 5",
+            "descrip": "This is the descrip",
+            "thumbnail":"images/projectthumb.jpg",
+            "images": ["image1", "image2","image3"]
+
+        },
+        {
+            "name": "Project 6",
+            "descrip": "This is the descrip",
+            "thumbnail":"images/projectthumb.jpg",
+            "images": ["image1", "image2","image3"]
+
+        },
+        {
+            "name": "Project 7",
+            "descrip": "This is the descrip",
+            "thumbnail":"images/projectthumb.jpg",
+            "images": ["image1", "image2","image3"]
+
+        },
+        {
+            "name": "Project 8",
+            "descrip": "This is the descrip",
+            "thumbnail":"images/projectthumb.jpg",
+            "images": ["image1", "image2","image3"]
+
+        },
+        {
+            "name": "Project 9",
+            "descrip": "This is the descrip",
+            "thumbnail":"images/projectthumb.jpg",
+            "images": ["image1", "image2","image3"]
+
+        }
+    ]
+}
