@@ -1,86 +1,170 @@
 $(function(){
+    console.log('in proj');
+
     var projectData = '';
-    
-//Section Functionaliy
-$('#header').toggle(function(){
-    $('#hello_section').animate({'height': '500px'}, 600);
-}, function(){
-    $('#hello_section').animate({'height': '250px'}, 600);
-});
 
-$('#project_header').toggle(function(){
-    $('#project_section').animate({'height': '1200px'}, 600);
-}, function(){
-    $('#project_section').animate({'height': '250px'}, 600);
-});
+    $('.section').hover(function(){
+        $(this).css("background-color", "#ffe65a");
+        $('.circle',this).css("background-color", "#ffe65a");
+    },function(){
+        $(this).css("background-color", "white");
+        $('.circle',this).css("background-color", "white");
+    });
 
-$('#contact').toggle(function(){
-    $('#contact_section').animate({'height': '400px'}, 600);
-}, function(){
-    $('#contact_section').animate({'height': '250px'}, 600);
-});
-///////////////////////
+////////
+
+    $('#resume_btn').toggle(function(){
+        console.log('resume_btn');
+        $('#resume').animate({height: '970px'}, 500);
+        $.scrollTo('#resume', 500);
+    }, function(){
+        //$('html,body').animate({scrollTop:0}, 700);
+        $('#resume').animate({height: '0px'}, 500);
+        $.scrollTo('#resume', 500);
+
+    });
+
+
+
+    //Section Functionaliy
+    $('#header, #arrow1').toggle(function(){
+        $('#hello_section').animate({'height': '520px'}, 600);
+        $('#hello_section, #header .circle').addClass('active');
+    }, function(){
+        $('#hello_section').animate({'height': '250px'}, 600);
+        $('#hello_section, #header .circle').removeClass('active');
+    });
+
+    $('#project_header,  #arrow2').toggle(function(){
+        $('#project_section').animate({'height': '1200px'}, 600, function(){
+            $('#project_section').css({'height':'100%'});
+        });
+        $('#project_section, #project_header .circle').addClass('active');
+    }, function(){
+        $('#project_section').animate({'height': '250px'}, 600);
+        $('#project_section, #project_header .circle').removeClass('active');
+    });
+
+    $('#contact,  #arrow3').toggle(function(){
+        $('#contact_section').animate({'height': '450px'}, 600);
+        $('#contact_section').addClass('active');
+    }, function(){
+        $('#contact_section').animate({'height': '250px'}, 600);
+        $('#contact_section').removeClass('active');
+    });
+    ///////////////////////
 
 
 
 // Project Container
     //pull in projects
-        //display thumbnails in rows
-    //grab width of project_list
-    //make projects_container & single_project the same width
+    $.getJSON('project_list.json', function(data) {
+       console.log(data.projects.length);
+        //var num_rows = data.projects.length / 3;
+        //alert(num_rows);
+        projectData = data;
+        //var thumb_height = $('.project_thumb img').height();
+       //alert('thumb height ='+thumb_height);  
+       dataReady();
 
-$.getJSON('project_list.json', function(data) {
-  //$('#test').html(JSON.stringify(data));
-  projectData = JSON.stringify(data);
-  dataReady();
-});
+    });
 
-function dataReady(){
+
+    function dataReady(){
     //console.log(projectData);
-       //load the thumbnails
-}
+        console.log('data ready');
+    
+        var thumbnails = "";
+        //grab all thumbnails
+        $.each(projectData.projects, function(item){
+            console.log(item);
+            //console.log(this.folder);
+            thumbnails += '<div class="project_thumb" item="'+item+'">';
+            thumbnails += '<img src="imgs/projects/'+this.folder+'/thumb.jpg"/>'
+            thumbnails += '</div>';
+        });
+        //append list to the dom
+        $('#project_list').html(thumbnails);
 
 
+        $(".project_thumb").click(function(){
+            //grab the number of project that was clicked
+            var thisProject = $(this).attr('item');
+            console.log(thisProject)
+            //pass to open function
+            openProject(thisProject);
+            $.scrollTo('#projects_container', 500, {offset:-10});
+        });
+    }
 
-    $(".project_thumb").click(function(){
-        // alert('open project');
+    //open a specific project
+    function openProject(proj){
+        console.log('open');
+        console.log('current proj = '+proj);
+        console.log(projectData.projects[proj].title);
+        
+        var currentProject = projectData.projects[proj];
+        var folder = currentProject.folder;
+        var imageCount = currentProject.images;
+        
+        console.log(currentProject.title);
+        console.log(currentProject.images);
 
-        //SWITH CONTENT OF THE PROJECT
+        var title = $('#project_title');
+        var desc = $('#project_description');
+
+        title.html(currentProject.title);
+        desc.html(currentProject.descrip);
+
         var slider = $('#banner-fade .bjqs');
         var sliderContent = '';
-        sliderContent += '<li><img src="img/banner01.jpg" title=""></li>';
-        sliderContent += '<li><img src="img/banner03.jpg" title=""></li>'; 
-        sliderContent += '<li><img src="img/banner01.jpg" title=""></li>'; 
-        sliderContent += '<li><img src="img/banner02.jpg" title=""></li>';  
-        sliderContent += '<li><img src="img/banner03.jpg" title=""></li>'; 
-        slider.html(sliderContent);
         
+        for(i=1;i<imageCount+1; i++){
+            console.log(i);
+            sliderContent += '<li><img src="imgs/projects/'+folder+'/banner0'+i+'.png" title=""></li>';
+        }
+        slider.html(sliderContent);
+
         //initialize/reinitialize the slider controls
         $('#banner-fade').bjqs({
-            height      : 438,
-            width       : 622,
-            responsive  : true
+            animtype      : 'slide',
+            height      : 600,
+            width       : 865,
+            responsive  : true,
+            automatic   : false
           });
+        //manually update size of the window to fix issues with slider 
+        $(window).resize();
 
-//$('#single_project').animate({top: '0'});
-        //show the project content above project_list
-        $('#project_list').animate({top: '-900'},function(){
-            $('#project_list').hide();
+        //fade out thumbs
+        $('#project_list').animate({opacity: '0'}, function(){
+            $('#project_list').css('z-index', '0');
         });
-        
-    });
 
-    $("#close_btn").click(function(){
-        // alert('open project');
-        $('#project_list').show();
-        //$('#single_project').animate({top: '900'});
-        $('#project_list').animate({top: '0'});
-        
-        //remove slider controls and markers
-        $('.bjqs-controls').remove();
-        $('.bjqs-markers').remove();
+
+    }
+
+    function closeProject(){
+        alert('close');
+    }
+
+    $(".close_btn").click(function(){
+        console.log('close project');
+        $('#project_list').css('z-index', '6');
+        $('#project_list').animate({opacity: '1'}, function(){
+            $('.bjqs-controls').remove();
+            $('.bjqs-markers').remove();
+            $(".bjqs").unwrap();
+            $(".bjqs").html('');
+        });
     });
 ///////////////////////
+
+    $(".scroll").click(function(event){     
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+    });
+
 
 });
 
@@ -89,8 +173,8 @@ function dataReady(){
 
 jQuery(document).ready(function($) {
  
-	$(".scroll").click(function(event){		
+	/*$(".scroll").click(function(event){		
 		event.preventDefault();
 		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
-	});
+	});*/
 });

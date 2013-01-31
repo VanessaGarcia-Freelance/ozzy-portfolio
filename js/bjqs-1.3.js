@@ -371,7 +371,7 @@
                     'width'     : responsive.width,
                     'height'    : responsive.height,
                     'overflow'  : 'hidden',
-                    'position'  : 'relative'
+                    'position'  : 'absolute'
                 });
 
                 // update the dimensions to the slider to accomodate all the slides side by side
@@ -387,7 +387,7 @@
                     'width'     : settings.width,
                     'height'    : settings.height,
                     'overflow'  : 'hidden',
-                    'position'  : 'relative'
+                    'position'  : 'absolute'
                 });
 
                 // update the dimensions to the slider to accomodate all the slides side by side

@@ -4,8 +4,44 @@ ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; d
 li.bjqs-slide{position:absolute; display:none;}
 ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
 ul.bjqs-controls.v-centered li a{position:absolute;}
-ul.bjqs-controls.v-centered li.bjqs-next a{right:0;}
-ul.bjqs-controls.v-centered li.bjqs-prev a{left:0;}
+ul.bjqs-controls.v-centered li.bjqs-next a, ul.bjqs-controls.v-centered li.bjqs-prev a{
+	color: transparent;
+	background-image:url(imgs/arrows.png);
+	background-position: center;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	height: 32px;
+	width: 32px;
+	border-radius: 25px;
+	position: absolute;
+	-moz-box-shadow: 0px 3px rgba(204, 204, 204, .46);
+    -webkit-box-shadow: 0px 3px rgba(204, 204, 204, .46);
+    box-shadow: 0px 3px rgba(204, 204, 204, .46);
+	border: 1px solid #333;
+	z-index:10;
+/*	top:-24px;*/
+	padding: 0;
+}
+ul.bjqs-controls.v-centered li a:hover{
+	background-color: #ffe65a;
+}
+
+ul.bjqs-controls.v-centered li.bjqs-next a{
+	right:-15px;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+ul.bjqs-controls.v-centered li.bjqs-prev a{
+	left:-15px;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
 ol.bjqs-markers{list-style: none; padding: 0; margin: 0; width:100%;}
 ol.bjqs-markers.h-centered{text-align: center;}
 ol.bjqs-markers li{display:inline;}

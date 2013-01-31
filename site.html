@@ -2,10 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10.0, user-scalable=yes" />
+
     <title>Oswaldo Zuniga</title>
     
     <!-- web fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Niconne|Sail|Elsie+Swash+Caps:400,900|Elsie:400,900|Raleway+Dots' rel='stylesheet' type='text/css'>
+    <!-- <link href='http://fonts.googleapis.com/css?family=Niconne|Sail|Elsie+Swash+Caps:400,900|Elsie:400,900|Raleway+Dots' rel='stylesheet' type='text/css'> -->
+    <link href='http://fonts.googleapis.com/css?family=Niconne|Elsie+Swash+Caps:900|Elsie:900|Raleway:300,200,100' rel='stylesheet' type='text/css'>
+
+
+
 
     <!-- stylesheet -->
     <link rel="stylesheet" type="text/css" href="style.css" />
@@ -18,20 +24,84 @@
     <link rel="stylesheet" href="bjqs.css">
      <!-- <link rel="stylesheet" href="demo.css"> -->
     <script src="js/bjqs-1.3.min.js"></script>
-
+    <script src="js/jquery.scrollTo-1.4.3.1.js"></script>
 </head>
 <body>
-    <div id="test"></div>
+    <div id="resume_btn" class="button"><span>My Resume</span></div>
+    <div id="resume">
+        <div class="h1"> OSWALDO ZUNIGA </div>
+        <div class="h2"> web designer <span class="and3"> & </span> typography guru</div>
+        
+        <div class="container">
+            <div class="h3"> EXPERIENCE </div>
+        </div>
+        
+        <div class="container2">
+            <div class="h2"><span id="bold">Lunchbox </span> | senior web designer</div>
+            <div class="p"> December 2010 / Present </div>
+        </div>
+
+        <div class="container2">
+            <div class="h2"><span id="bold">bebe </span> |  senior web designer</div>
+            <div class="p"> September 2010 / December 2010 </div>
+        </div>
+        
+        <div class="container2">
+            <div class="h2"><span id="bold">Lela Studios </span> |  web designer</div>
+            <div class="p"> September 2010 / December 2010 </div>
+        </div>
+        
+        <div class="container2">
+            <div class="h2"><span id="bold">Flash Factory </span> |  web designer</div>
+            <div class="p"> January 2008 / March 2010 </div>
+        </div>
+
+        <div class="container2">
+            <div class="h2"><span id="bold">Hawk Helmets </span> |  graphic/web designer</div>
+            <div class="p"> 2007 / 2008 </div>
+        </div>
+
+        <div class="container2">
+            <div class="h2"><span id="bold">Jungle8 </span> |  graphic/web designer</div>
+            <div class="p"> 2005 / 2006 </div>
+        </div>
+
+        <br/>
+        
+        <div class="container">
+            <div class="h3"> EDUCATION </div>
+        </div>
+        <div class="container2">
+            <div class="h2"><span id="bold">LA Trade Technical College </span> | graphic design</div>
+            <div class="p"> 2003 / 2006 </div>
+            <div class="p"> 400 West Washington Blvd. Los Angeles, CA 90015</div>
+        </div>
+
+        <br/>
+        <div class="container">
+            <div class="h3"> SKILLS </div>
+        </div>
+        <div class="container2">
+            <div class="h2"><span id="bold">Software </span> | adobe photoshop cs6, illustrator cs6,
+ﬂash cs6, actionscript 2, dreamweaver cs6, html, css, xml</div>
+        </div>
+
+        <a href="docs/oswaldozuniga_resume.pdf" target="blank" id="download_resume" class="button"><span>Download Full Resume</span></a>
+    </div>
+    <!-- //Resume -->
+
     <div id="container">
         <!-- Hello Section -->
         <div id="hello_section" class="section f_diag">
+            <a name="anchor1" id="anchor1"></a>
             <div id="header">
+                 <a href="#anchor1" class="scroll"><span id="scroll"></span></a>
                 Hello
                 <div class="circle">
                     <div class="iam">I am
                     </div>
                     <div class="name">OSWALDO ZUNIGA
-                        <div class="subhead"> web designer &nbsp; &nbsp; &nbsp;typographanista</div>
+                        <div class="subhead"> web designer &nbsp; &nbsp; &nbsp;typography guru</div>
                         <div class="and2"> & </div>
                     </div>
                 </div>
@@ -41,9 +111,9 @@
 
         </div>
         <!-- bottom arrow -->
-        <div class="arrow_block b_diag">
+        <div id="hello_arrow" class="arrow_block b_diag">
             <div class="shadow">
-                <div class="arrow"></div>
+                <div class="arrow" id="arrow1"><a href="#anchor1" class="scroll"><span id="scroll"></span></a></div>
             </div>
         </div>
         <!-- // Hello Section -->
@@ -51,10 +121,12 @@
 
         <!-- Project Section -->
         <div id="project_section" class="section b_diag">
+            <a name="anchor2" id="anchor2"></a>
             <div id="project_header">
+                <a href="#anchor2" class="scroll"><span id="scroll"></span></a>
                 <div class="whati">What i</div>
                 <div class="do">DO
-                    <div class="circle2 b_diag">
+                    <div class="circle b_diag">
                         <div class="is">Is
                         </div>
                          <div class="name2"> SOLVE PROBLEMS VISUALLY
@@ -67,43 +139,37 @@
 
             <!-- Projects Container -->
             <div id="projects_container">
-                    <div id="project_list" class="project_box">
-                        <div class="project_thumb" alt="0"><img src="imgs/thumb.jpg"/></div>
-                        <div class="project_thumb"><img src="imgs/thumb.jpg"/></div>
-                        <div class="project_thumb"><img src="imgs/thumb.jpg"/></div>
-                        <div class="project_thumb"><img src="imgs/thumb.jpg"/></div>
-                        <div class="project_thumb"><img src="imgs/thumb.jpg"/></div>
-                        <div class="project_thumb"><img src="imgs/thumb.jpg"/></div>
-                        <div class="project_thumb"><img src="imgs/thumb.jpg"/></div>
-                        <div class="project_thumb"><img src="imgs/thumb.jpg"/></div>
-                        <div class="project_thumb"><img src="imgs/thumb.jpg"/></div>
+                <div id="project_list" class="project_box">
+                    <!-- dynamically generated content -->
+                </div>
+
+                <div id="single_project" class="project_box">
+                    <div class="close_btn"><!-- <img src="imgs/close_btn.png"/> --></div>
+
+                     <div id="banner-fade">
+                        <!-- start Basic Jquery Slider -->
+                        <ul class="bjqs">
+                          <li><img src="imgs/projects/project_one/banner01.png" title="test caption"></li>
+                          <li><img src="imgs/projects/project_one/banner02.png" title=""></li>
+                          <li><img src="imgs/projects/project_one/banner03.png" title=""></li>
+                        </ul>
+                        <!-- end Basic jQuery Slider -->
                     </div>
+                    <h1 id="project_title">Project 1 </h1>
+                    <p id="project_description">this is the description for this project</p>
 
-                    <div id="single_project" class="project_box">
-                        <div id="close_btn"><img src="imgs/close_btn.png"/></div>
 
-                         <div id="banner-fade">
-                            <!-- start Basic Jquery Slider -->
-                            <ul class="bjqs">
-                              <li><img src="img/banner01.jpg" title=""></li>
-                              <li><img src="img/banner02.jpg" title=""></li>
-                              <li><img src="img/banner03.jpg" title=""></li>
-                            </ul>
-                            <!-- end Basic jQuery Slider -->
-                        </div>
-                        <h1>Project 1 </h1>
-                        <p>this is the description for this project</p>
-
-                    </div> 
+                </div> 
+                
             </div>
+            <br/><br/>
             <!-- // Projects Container -->
-
 
         </div>
         <!-- bottom arrow -->
         <div class="arrow_block f_diag">
             <div class="shadow">
-                <div class="arrow"></div>
+                <div class="arrow" id="arrow2"><a href="#anchor2" class="scroll"><span id="scroll"></span></a></div>
             </div>
         </div>
         <!-- // Project Section -->
@@ -111,199 +177,35 @@
 
         <!-- Contact Section -->
         <div id="contact_section" class="section f_diag">
+            <a name="anchor3" id="anchor3"></a>
             <div id="contact">
+                <a href="#anchor3" class="scroll"><span id="scroll"></span></a>
                 Contact me
                 <div class="and"> & </div>
                 <div class="info"> LET'S MAKE THE WEB LOOK BETTER AND WORK BEST </div>
             </div>
+            <p>zuniga.o@gmail.com <span>|</span> 323.600.4814</p>
             <div id="social">
-                <a href="#" class="iconbg">
-                    <span>F</span>
+                <a href="http://www.linkedin.com/pub/oswaldo-zuniga/5b/43b/383/" target="blank" class="iconbg" id="linkedin">
                 </a>
-                <a class="iconbg">
-                    <span>T</span>
+                <a href="https://twitter.com/rockentry" target="blank" class="iconbg" id="twitter">
                 </a>
-                <a class="iconbg">
-                    <span>L</span>
-                </a>
-                <a class="iconbg">
-                    <span>O</span>
+                <a href="http://www.facebook.com/oswaldo.zuniga" target="blank" class="iconbg" id="facebook">
                 </a>
             </div>
         </div>
         <!-- bottom arrow -->
         <div class="arrow_block">
             <div class="shadow">
-                <div class="arrow"></div>
+                <div class="arrow" id="arrow3"><a href="#anchor3" class="scroll"><span id="scroll"></span></a></div>
             </div>
         </div>
         <!-- // Contact Section -->
 
     </div>
 
-
-<script class="secret-source">
-        jQuery(document).ready(function($) {
-
-          // $('#banner-fade').bjqs({
-          //   height      : 438,
-          //   width       : 622,
-          //   responsive  : true
-          // });
-
-        });
-      </script>
-
-<br/><br/<br>
-
-<!--  -->
-
-<!-- <a name="anchor" id="anchor"></a>
-<div id="headerbg">
-<a href="#anchor" class="scroll"><span id="scroll"></span></a>
-	<div id="header">
-    Hello
-    	<div class="circle">
-        	<div class="iam">I am
-            </div>
-            <div class="name">OSWALDO ZUNIGA
-              <div class="subhead"> web designer &nbsp; &nbsp; &nbsp;typographanista</div>
-              <div class="and2"> & </div>
-            </div>
-      </div>
-      <div id="overlap"> Designing in Los Angeles since 2003, I've come across all kinds of clients, conflicts and contradictions and done my best to make meaningful experiences that are easy to look at, and easier to use.</div>
-</div>
-    </div>   
-</div>
-
-<a name="anchor2" id="anchor2"></a>
-<div id="headerbg2">
-<a href="#anchor2" class="scroll"><span id="scroll"></span></a>
-<div id="shadows">
-<div class="arrow"></div>
-</div>
-
-<div class="whati">What i</div>
-	<div class="do">DO
-    	<div class="circle2">
-        	<div class="is">Is
-        	</div>
-             <div class="name2"> SOLVE PROBLEMS VISUALLY
-		</div>
-        </div>
-        <div class="do1"></div>
-		<div class="do2"></div>
-	</div>
-    <div id="projects_container">
-        <div id="project_list" class="project_box">
-            <div class="project_thumb"><img src="#"/></div>
-            <div class="project_thumb"><img src="#"/></div>
-            <div class="project_thumb"><img src="#"/></div>
-            <div class="project_thumb"><img src="#"/></div>
-            <div class="project_thumb"><img src="#"/></div>
-            <div class="project_thumb"><img src="#"/></div>
-            <div class="project_thumb"><img src="#"/></div>
-            <div class="project_thumb"><img src="#"/></div>
-            <div class="project_thumb"><img src="#"/></div>
-
-        </div>
-        <div id="single_project" class="project_box"></div> 
+    <div id="bottom_feeder">
     </div>
-</div>
 
-<a name="anchor3" id="anchor3"></a>
-<div id="headerbg3">
-<a href="#anchor3" class="scroll"><span id="scroll"></span></a>
-	<div id="shadows2">
-	<div class="arrow2"></div>
-	</div>
-	<div id="contact">
-    Contact me
-    	<div class="and"> & </div>
-      <div class="info"> LET'S MAKE THE WEB LOOK BETTER AND WORK BEST </div>
-      	<div id="social">
-      		<div class="iconbg">
-        		<div class="f">F</div>
-            </div>
-            <div class="iconbg">
-        		<div class="t">T</div>
-            </div>
-            <div class="iconbg">
-        		<div class="l">L</div>
-            </div>
-            <div class="iconbg">
-        		<div class="o">O</div>
-            </div>
-            </div>
-      </div>
-    </div>
-</div>
-<div id="shadows3">
-	<div class="arrow3"></div>
-</div>
-<div id="bg2"></div> -->
-
-
-<!-- <div id="resume">
-    
-    <div class="h1"> OSWALDO ZUNIGA </div>
-	<div class="h2"> web designer &nbsp; &nbsp; &nbsp;typographanista
-    <div class="and3"> & </div>
-    </div>
-    
-    <div class="container">
-    <div class="h3"> EXPERIENCE </div>
-    </div>
-    
-    <div class="container2">
-    <div class="h2"><span id="bold">Lunchbox </span> | senior web designer</div>
-    <div class="p"> December 2010 / Present </div>
-    <div class="p"> As one of two senior visual designers, I am a go-to creative driver on brand
-engagement pages, platform pages, banners, and other work products put out by
-the creative department of Lunchbox. Brands include Sony, Disney, Degree, Unilever,
-Nestle, Axe and more.</div>
-
-	<div class="container2">
-    <div class="h2"><span id="bold">bebe </span> |  senior web designer</div>
-    <div class="p"> September 2010 / December 2010 </div>
-    <div class="p"> 10345 W. Olympic Blvd. Los Angeles, CA 90064
-As a freelancer at Bebe, I worked in the e-commerce division, redesigning product
-banners and landing pages. Under this contract, I worked on the designs of various
-look books for Addiction.</div>
-	
-    <div class="container2">
-    <div class="h2"><span id="bold">Lela Studios </span> |  web designer</div>
-    <div class="p"> September 2010 / December 2010 </div>
-    <div class="p"> 4212 Santa Monica Blvd. Los Angeles, CA 90029
-I was hired at Lela Studios to design Leonardo Dicaprio's website, launched in time
-for release with the movie Inception. Also worked on projects for Herbalife.</div>
-	
-    <div class="container2">
-    <div class="h2"><span id="bold">Flash Factory </span> |  web designer</div>
-    <div class="p"> January 2008 / March 2010 </div>
-    <div class="p"> 1004 W. Oak St. Burbank, California 91601
-Designed composition of websites from conception to launch. Here, I gained
-experience designing Flash animations, banners, and photographic manipulation
-to particular client needs.</div>
-
-	<div class="container2">
-    <div class="h2"><span id="bold">Hawk Helmets </span> |  graphic/web designer</div>
-    <div class="p"> 2007 / 2008 </div>
-    <div class="p"> 955 Venice Blvd. Los Angeles, CA 90015
-I created and designed the branding of Hawk Helmets - a motocycle helmet line.
-This added 15 helmet designs to my creative portfolio along with the associated logos,
-stationary, and packaging of the actual product.</div>
-
-	<div class="container2">
-    <div class="h2"><span id="bold">Jungle8 </span> |  graphic/web designer</div>
-    <div class="p"> 2005 / 2006 </div>
-    <div class="p"> 2100 N. Main St., Suite B14 Los Angeles, CA 90031
-Designed and updated websites to fit clients specifications.</div>
-
-</div>   
-    </div>
-    
-</div>
-<div id="bg"></div> -->
 </body>
 </html>

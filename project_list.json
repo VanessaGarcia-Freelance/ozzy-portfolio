@@ -1,64 +1,74 @@
 {
     "projects": [
         {
-            "name": "Project 1  ",
-            "descrip": "This is the descrip",
-            "images": ["image1", "image2","image3"]
+            "title": "Leonardo Dicaprio",
+            "descrip": "Portfolio site for Leonardo dicaprio Showcasing his career as a high profile actor as well as promoting his foundation to protect people, animals and the planet.",
+            "folder":"project_one",
+            "images": 3,
+            "captions":[]
 
         },
         {
-            "name": "Project 2",
-            "descrip": "This is the descrip",
-            "images": ["image1", "image2","image3"]
+            "title": "bebe",
+            "descrip": "Building on the bebe brand by creating look-books for the “Addiction” and “Kim Kardashian” clothing and jewelry lines as well as updating their ecommerce website.",
+            "folder":"project_two",
+            "images": 4,
+            "captions":[]
 
         },
         {
-            "name": "Project 3",
-            "descrip": "This is the descrip",
-            "thumbnail":"images/projectthumb.jpg",
-            "images": ["image1", "image2","image3"]
+            "title": "Qcera",
+            "descrip": "Creating a unified brand for the software company with a new logo design, packaging, stationary and completely redesigning their website.",
+            "folder":"project_three",
+            "images": 2,
+            "captions":[]
 
         },
         {
-            "name": "Project 4",
-            "descrip": "This is the descrip",
-            "thumbnail":"images/projectthumb.jpg",
-            "images": ["image1", "image2","image3"]
+            "title": "Flash Factory",
+            "descrip": "Created various flash templated websites focusing on people of trade including photographers, musicians, artists and small business owners.",
+            "folder":"project_four",
+            "images": 2,
+            "captions":[]
 
         },
         {
-            "name": "Project 5",
+            "title": "Nestlé",
+            "descrip": "Designed online experiences promoting various product lines under the Nestle brand including Lean Cuisine, Dreyer’s, Haagen-Dazs, Skinny Cow, Coffee Mate, Nescafe and Nesquik.",
+            "folder":"project_five",
+            "images": 7,
+            "captions":[]
+        },
+        {
+            "title": "The Front International",
             "descrip": "This is the descrip",
-            "thumbnail":"images/projectthumb.jpg",
-            "images": ["image1", "image2","image3"]
+            "folder":"project_six",
+            "images": 4,
+            "captions":[]
 
         },
         {
-            "name": "Project 6",
-            "descrip": "This is the descrip",
-            "thumbnail":"images/projectthumb.jpg",
-            "images": ["image1", "image2","image3"]
+            "title": "Disney",
+            "descrip": "Designed e-commerce brand engagement pages for various Disney projects including Cars 2, Toy Story, Winnie the Poo, Mickey Mouse and a central hub for their Disney Princess characters.",
+            "folder":"project_seven",
+            "images": 6,
+            "captions":[]
 
         },
         {
-            "name": "Project 7",
+            "title": "Identity Design",
             "descrip": "This is the descrip",
-            "thumbnail":"images/projectthumb.jpg",
-            "images": ["image1", "image2","image3"]
+            "folder":"project_eight",
+            "images": 4,
+            "captions":[]
 
         },
         {
-            "name": "Project 8",
+            "title": "Additional Work",
             "descrip": "This is the descrip",
-            "thumbnail":"images/projectthumb.jpg",
-            "images": ["image1", "image2","image3"]
-
-        },
-        {
-            "name": "Project 9",
-            "descrip": "This is the descrip",
-            "thumbnail":"images/projectthumb.jpg",
-            "images": ["image1", "image2","image3"]
+            "folder":"project_nine",
+            "images": 5,
+            "captions":[]
 
         }
     ]
