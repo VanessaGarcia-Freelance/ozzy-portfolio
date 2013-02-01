@@ -199,13 +199,10 @@ body{
 		float:left;
 		cursor: pointer;
 		display: block;
-<<<<<<< HEAD
-=======
 
 		background-repeat:no-repeat;
 		background-position:center center;
 		background-size: 100%;
->>>>>>> more styling changes for responsive styles. fixed slider resizing issue. added new resume section. new new project thumbnails.
 	}
 	.project_thumb img{
 		width: 100%;
@@ -249,7 +246,6 @@ body{
 		margin: 6px auto 0 auto;
 	}
 /* *** */
-<<<<<<< HEAD
 
 /* Slider */
 /* Slider Styles*/
@@ -291,49 +287,6 @@ body{
 		background: #333;
 	}
 
-=======
-
-/* Slider */
-/* Slider Styles*/
-	#banner-fade{
-		margin: 10px auto 0 auto;
-	}
-#banner-fade,
-#banner-slide{
-	margin-bottom: 40px;
-}
-	ul.bjqs-controls.v-centered li a{
-		display:block;
-		padding:10px;
-		background:#fff;
-		color:#000;
-		text-decoration: none;
-	}
-
-	ul.bjqs-controls.v-centered li a:hover{
-		background:#000;
-		color:#fefefe;
-	}
-
-	ol.bjqs-markers li a{
-		padding: 0 5px;
-		background:#fefefe;
-		/*color:#fff;*/
-		margin:5px;
-		text-decoration: none;
-		color: transparent;
-		border: 1px solid #c3c3c3;
-		-webkit-border-radius: 10px;
-		-moz-border-radius: 10px;
-		border-radius: 10px;
-	}
-
-	ol.bjqs-markers li.active-marker a,
-	ol.bjqs-markers li a:hover{
-		background: #333;
-	}
-
->>>>>>> more styling changes for responsive styles. fixed slider resizing issue. added new resume section. new new project thumbnails.
 	p.bjqs-caption{
 		background: rgba(255,255,255,0.5);
 	}
@@ -859,10 +812,6 @@ border-bottom-width: 1px;
 	.project_thumb{
 			width: 50%;
 	}
-<<<<<<< HEAD
-
-=======
->>>>>>> more styling changes for responsive styles. fixed slider resizing issue. added new resume section. new new project thumbnails.
 }
 
 @media handheld, screen and (max-width: 640px) {

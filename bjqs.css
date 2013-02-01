@@ -19,12 +19,8 @@ ul.bjqs-controls.v-centered li.bjqs-next a, ul.bjqs-controls.v-centered li.bjqs-
     box-shadow: 0px 3px rgba(204, 204, 204, .46);
 	border: 1px solid #333;
 	z-index:10;
-<<<<<<< HEAD
-/*	top:-24px;*/
-=======
 	margin-top: -40px;
 	top: 50%;
->>>>>>> more styling changes for responsive styles. fixed slider resizing issue. added new resume section. new new project thumbnails.
 	padding: 0;
 }
 ul.bjqs-controls.v-centered li a:hover{

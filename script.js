@@ -79,11 +79,7 @@ $(function(){
         $.each(projectData.projects, function(item){
             console.log(item);
             //console.log(this.folder);
-<<<<<<< HEAD
-            thumbnails += '<div class="project_thumb" item="'+item+'">';
-=======
             thumbnails += '<div class="project_thumb" item="'+item+'" style="background:url(imgs/projects/'+this.folder+'/rollover.jpg); background-size: 100%;">';
->>>>>>> more styling changes for responsive styles. fixed slider resizing issue. added new resume section. new new project thumbnails.
             thumbnails += '<img src="imgs/projects/'+this.folder+'/thumb.jpg"/>'
             thumbnails += '</div>';
         });
@@ -140,12 +136,8 @@ $(function(){
             height      : 600,
             width       : 865,
             responsive  : true,
-<<<<<<< HEAD
-            automatic   : false
-=======
             automatic   : false,
             centercontrols  : true
->>>>>>> more styling changes for responsive styles. fixed slider resizing issue. added new resume section. new new project thumbnails.
           });
         //manually update size of the window to fix issues with slider 
         $(window).resize();
