@@ -56,7 +56,7 @@
 
         },
         {
-            "title": "Identity Design",
+            "title": "Portfolio Site",
             "descrip": "This is the descrip",
             "folder":"project_eight",
             "images": 4,
@@ -64,10 +64,10 @@
 
         },
         {
-            "title": "Additional Work",
+            "title": "Identity Design",
             "descrip": "This is the descrip",
             "folder":"project_nine",
-            "images": 5,
+            "images": 4,
             "captions":[]
 
         }
