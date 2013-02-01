@@ -453,8 +453,8 @@
                     ratio       = (offset_px / settings.height) * 100,
                     offset      = ratio + '%';
 
-                $c_fwd.find('a').css('top', offset);
-                $c_prev.find('a').css('top', offset);
+               // $c_fwd.find('a').css('top', offset);
+               // $c_prev.find('a').css('top', offset);
 
             }
 
@@ -620,10 +620,12 @@
                 state.animating = true;
 
                 if(position){
+                    console.log('position');
                     state.nextslide = position;
                     state.nextindex = position-1;
                 }
                 else{
+                    console.log('set next8');
                     set_next(direction);
                 }
 
