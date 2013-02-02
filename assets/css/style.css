@@ -18,7 +18,7 @@ padding: 0;
 }
 
 body{
-	background-image:url(imgs/light.png);
+	background-image:url(../img/light.png);
 }
 #container{
 }
@@ -114,7 +114,7 @@ body{
 .f_diag {
 	background:white;
 
-	background-image:url(imgs/lined.png);
+	background-image:url(../img/lined.png);
 	/*background: white;*/
 	/*z-index: 1;*/
 }
@@ -122,7 +122,7 @@ body{
 .b_diag {
 	background:white;
 
-	background-image:url(imgs/lined3.png);
+	background-image:url(../img/lined3.png);
 	/*background: white;*/
 	/*z-index: 1;*/
 }
@@ -136,7 +136,7 @@ body{
 	.shadow{
 	height: 100%;
 	width:100%;
-	background-image:url(imgs/shadow.png);
+	background-image:url(../img/shadow.png);
 	background-repeat:no-repeat;
 	background-position: center;
 	position: relative;
@@ -144,7 +144,7 @@ body{
 	z-index: 1;
 }
 	.arrow{
-	background-image:url(imgs/arrows.png);
+	background-image:url(../img/arrows.png);
 	background-position: center;
 	background-color: #ffe65a;
 	background-repeat: no-repeat;
@@ -289,7 +289,7 @@ body{
 		background: rgba(255,255,255,0.5);
 	}
 .close_btn {
-	background:url(imgs/close_x.png) no-repeat;
+	background:url(../img/close_x.png) no-repeat;
 	background-position: center;
 	background-color: #fff;
 	height: 32px;
@@ -315,7 +315,7 @@ body{
 .iconbg {
 	width: 85px;
 	height: 85px;
-	background: url(imgs/social_sprite.png) no-repeat;
+	background: url(../img/social_sprite.png) no-repeat;
 	position:relative;
 	margin: 0px 10px;
 	float: left;
@@ -377,7 +377,7 @@ body{
   z-index: 3;
   /* edit: fixes overlap error in IE7/8, 
      make sure you have an empty gif */
-  background-image: url('empty.gif');
+  /*****background-image: url('empty.gif');******/
 }  
 
 .and3 {
@@ -403,7 +403,7 @@ body{
 	position: relative;
 	border-bottom-style:dashed;
 	border-bottom-width: 1px;
-	background-image:url(imgs/lined.png);
+	background-image:url(../img/lined.png);
 	z-index: 1;
 	
 -webkit-transition-property:color, background-color; 
@@ -489,7 +489,7 @@ body{
 #header .circle {
 	width: 80px;
 	height: 80px;
-	background-image: url(imgs/lined.png);
+	background-image: url(../img/lined.png);
 	background-repeat: inherit;
 	background-color:#FFF;
 	border-radius: 50px;
@@ -558,7 +558,7 @@ body{
 	position: relative;
 	border-bottom-style:dashed;
 	border-bottom-width: 1px;
-	background-image:url(imgs/lined3.png);
+	background-image:url(../img/lined3.png);
 	top: 0px;
 	z-index: 2;
 	
@@ -600,7 +600,7 @@ body{
 #project_header .circle {
 	width: 80px;
 	height: 80px;
-	/*background-image: url(imgs/lined.png);*/
+	/*background-image: url(../img/lined.png);*/
 	background-repeat: inherit;
 	background-color:#FFF;
 	border-radius: 50px;
@@ -651,7 +651,7 @@ body{
 .do1 {
 	height: 75px;
 	width: 118px;
-	background-image:url(imgs/doleft.png);
+	background-image:url(../img/doleft.png);
 	background-repeat:no-repeat;
 	background-position: center;
 	position:relative;
@@ -663,7 +663,7 @@ body{
 .do2 {
 	height: 75px;
 	width: 118px;
-	background-image:url(imgs/doright.png);
+	background-image:url(../img/doright.png);
 	background-repeat:no-repeat;
 	background-position: center;
 	position:relative;
@@ -684,7 +684,7 @@ body{
 	border:#333;
 	border-bottom-style:dashed;
 	border-bottom-width: 1px;
-	background-image:url(imgs/lined.png);
+	background-image:url(../img/lined.png);
 	top: 0px;
 	z-index: 3;
 	
@@ -881,7 +881,7 @@ border-bottom-width: 1px;
 	.do1 {
 		height: 75px;
 		width: 118px;
-		background-image:url(imgs/doleft_small.png);
+		background-image:url(../img/doleft_small.png);
 		background-repeat:no-repeat;
 		background-position: center;
 		position:relative;
@@ -893,7 +893,7 @@ border-bottom-width: 1px;
 	.do2 {
 		height: 75px;
 		width: 118px;
-		background-image:url(imgs/doright_small.png);
+		background-image:url(../img/doright_small.png);
 		background-repeat:no-repeat;
 		background-position: center;
 		position:relative;
@@ -903,13 +903,13 @@ border-bottom-width: 1px;
 	}
 
 	.shadow{
-		background-image:url(imgs/shadow2.png);
+		background-image:url(../img/shadow2.png);
 		
 
 	}
 
 	#shadows, #shadows2, #shadows3{
-		background-image:url(imgs/shadow2.png);
+		background-image:url(../img/shadow2.png);
 		
 
 	}

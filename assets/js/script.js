@@ -58,7 +58,7 @@ $(function(){
 
 // Project Container
     //pull in projects
-    $.getJSON('project_list.json', function(data) {
+    $.getJSON('assets/project_list.json', function(data) {
        console.log(data.projects.length);
         //var num_rows = data.projects.length / 3;
         //alert(num_rows);
@@ -79,8 +79,8 @@ $(function(){
         $.each(projectData.projects, function(item){
             console.log(item);
             //console.log(this.folder);
-            thumbnails += '<div class="project_thumb" item="'+item+'" style="background:url(imgs/projects/'+this.folder+'/rollover.jpg); background-size: 100%;">';
-            thumbnails += '<img src="imgs/projects/'+this.folder+'/thumb.jpg"/>'
+            thumbnails += '<div class="project_thumb" item="'+item+'" style="background:url(assets/img/projects/'+this.folder+'/rollover.jpg); background-size: 100%;">';
+            thumbnails += '<img src="assets/img/projects/'+this.folder+'/thumb.jpg"/>'
             thumbnails += '</div>';
         });
         //append list to the dom
@@ -126,7 +126,7 @@ $(function(){
         
         for(i=1;i<imageCount+1; i++){
             console.log(i);
-            sliderContent += '<li><img src="imgs/projects/'+folder+'/banner0'+i+'.png" title=""></li>';
+            sliderContent += '<li><img src="assets/img/projects/'+folder+'/banner0'+i+'.png" title=""></li>';
         }
         slider.html(sliderContent);
 
